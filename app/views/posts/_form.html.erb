@@ -1,0 +1,14 @@
+<p><%= form.error_messages %>
+<fieldset>
+	<div class="controls">
+		<%= form.label :title %>
+		<%= form.text_field :title %>
+	</div>
+
+	<div class="controls">
+		<%= form.label :body %>
+		<%= form.text_area :body, :cols => 80, :rows => 10  %>
+	</div>
+
+	<%= form.submit :class => "btn" %>
+</fieldset>

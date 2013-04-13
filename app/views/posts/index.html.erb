@@ -1,4 +1,8 @@
 <!-- This file is app/views/posts/index.html.erb-->
+<div class="new-post">
+	<%= link_to "+Add Post", new_post_path %>
+</div>
+
 <% @posts.each do |post| %>
 	<div class="post">
 		<h1><%= link_to post.title, show_post_path(post) %></h1>
