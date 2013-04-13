@@ -1,0 +1,10 @@
+<!-- This file is app/views/posts/index.html.erb-->
+<% @posts.each do |post| %>
+	<div class="post">
+		<h1><%= link_to post.title, show_post_path(post) %></h1>
+		<p><%= post.body %></p>
+		<em>by <%= post.user.email %></em>
+	</div>
+<% end %>
+
+
