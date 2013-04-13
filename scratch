@@ -1,0 +1,10 @@
+When talking about or using Rails controller action.
+
+We use a shorthand, which is a Ruby string, "controller name#action name"
+
+class HomeController
+  def index
+  end
+end
+
+# our shorthand is "home#index"
